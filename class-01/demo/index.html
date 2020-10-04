@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My first project in 201</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            /* background-color: rgb(100, 25, 100); */
+        }
+        .catName {
+            border: 3px solid blue;
+        }
+        .mainNav {
+            background-color: cadetblue;
+        }
+        /* ul li {
+            color: red;
+        } */
+        .mainNav ul li {
+            color: red;
+        }
+
+        #sherry {
+            border: 3px solid yellow;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class='mainNav'>
+            <ul>
+                <li>Cats</li>
+                <li>About</li>
+                <li style="color: green;">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Cat names</h1>
+        <ul>
+            <li id="sherry" class="catName">Sherry</li>
+            <li class="catName">Biso</li>
+            <li class="catName">dergham</li>
+            <li class="catName">chopa</li>
+            <li class="catName">Candy</li>
+        </ul>
+    </main>
+    <footer>all rights reserved 2020 201d11</footer>
+    <script>
+        var userName = prompt('what is your name?');
+        console.log('userName = ',userName);
+        // alert('your name is ' + userName);
+
+        var age = prompt('what is your age?');
+        console.log('age = ', age);
+
+        alert('hello' + userName + 'and your age is' + age);
+    </script>
+</body>
+
+</html>
