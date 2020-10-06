@@ -1,0 +1,48 @@
+* {
+  border: 1px solid black;
+  font-family: sans-serif;
+  /* margin: 0px; */
+}
+
+.inline-p {
+  display: block;
+  /* border: 3px dashed red; thickness style color
+  margin-top: 20px;
+  padding-left: 20px;  */ 
+  /* different between padding & padding-top */
+}
+
+#px-div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+#pct-div {
+  width: 90%;
+  height: 90%;
+  background-color: tan;
+}
+
+#overflow-box {
+  max-height: 100px;
+  overflow: scroll;
+}
+
+#bmp-box p {
+  padding: 20px;
+}
+
+
+/* usually we use inline-block for Navigation Bar */
+.nav {
+  background-color: yellow; 
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
