@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital@1&family=Oswald&display=swap');
+body {
+  background: rgb(153, 162, 241);
+}
+
+#intro {
+  /* font */
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Cousine', monospace;
+
+}
+
+#details {
+  /* different font */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#more-details {
+  /* google font */
+  font-family: 'Oswald', sans-serif;
+}
