@@ -1,0 +1,143 @@
+* {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 40%;
+}
+
+#chart {
+  width: 400;
+  height: 400;
+}
+
+/*transitions alter the appearance of an element when the state changes. You use pseudo-selectors to target different states (like :hover :focus :active and :target ).
+there are three major properties to set when you use a transition:
+- transition-property (which property, or properties, you want to transition)
+- transition-duration (how long you the transition to take. this is in seconds, like 2s, or milliseconds, like 350ms)*/
+
+.rounding {
+  width: 200px;
+  height: 200px;
+  background-color: #0394e6;
+  border-radius: 0;
+  transition: 2s;
+}
+
+.rounding:hover {
+  /* specifies the name of the CSS property the transition effect is for */
+  transition-property: border-radius, background-color;
+
+  /* specifies how many seconds (s) or milliseconds (ms) a transition effect takes to complete. */
+  transition-duration: 5s, 5s;
+  
+  border-radius: 50%;
+  background-color: #f03c1d;
+}
+
+.doNothing {
+  background-color: #a570da;
+  opacity: 0.5;
+  outline: 2px solid #ffffff;
+  margin-top: 10px;
+}
+
+.doNothing:hover {
+  transition-property: opacity;
+  transition-duration: 100ms;
+  opacity: 1;
+}
+
+.doNothing:active {
+  transition-property: outline;
+  transition-duration: 100ms;
+  outline: 2px solid yellow;
+}
+
+
+.animation {
+  background-color: #cccccc;
+  border: 2px solid #bbbbbb;
+  border-radius: 3%;
+  width: 400px;
+  height: 400px;
+}
+
+
+/* The @keyframes rule specifies the animation code.
+The animation is created by gradually changing from one set of CSS styles to another.
+
+we can use from to
+@keyframes moveRight {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+ 0% is the beginning of the animation, 100% is when the animation is complete.
+*/
+
+@keyframes moveRight {
+  0% { /*0% is the beginning of the animation*/
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 90%;
+    top: 25%;
+  }
+  50% {
+    left: 0%;
+    top: 50%;
+  }
+  75% {
+    left: 90%;
+    top: 75%;
+  }
+  100% { /*100% is when the animation is complete.*/
+    left: 0%;
+    top: 90%;
+  }
+}
+
+.animationElement {
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  animation-name: moveRight;
+  width: 10%;
+  height: 10%;
+  background-color: #0c8f16;
+  position: relative; /*to set left & right up*/
+}
+
+
+@keyframes blinkAnimation {
+  /* 350ms */
+  0% {
+    /*opacity: 1.0;*/
+    color: #000000;
+  }
+  50% {
+    /*opacity: 0;*/
+    color: #ffffff;
+  }
+  100% {
+    /*opacity: 1.0;*/
+    color: #000000;
+  }
+}
+/*animations alter an element for a given number of iterations. For animations, you need to define:
+- a named animation, using the @keyframes rule, that says where to "start" and where to "end", and (optional) any midpoints in between
+- which element is using the named animation (animation-name)
+- how long the animation should run (animation-duration)
+- how many times to repeat (animation-iteration-count)
+- how it should be timed (animation-timing-function)*/
+
+.blink {
+  animation-name: blinkAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: 350ms;
+}
+
+/* check this line
+https://www.w3schools.com/css/css3_animations.asp
+*/
